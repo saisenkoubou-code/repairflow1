@@ -8,7 +8,6 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="RepairFlow">
-<link rel="manifest" href="manifest.json">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=DM+Mono:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#0d1117;--sf:#161b22;--s2:#1c2128;--s3:#21262d;--bd:rgba(255,255,255,.08);--bd2:rgba(255,255,255,.14);--tx:#e6edf3;--mu:#7d8590;--mu2:#484f58;--gn:#3fb950;--gdm:rgba(63,185,80,.15);--bl:#58a6ff;--bdm:rgba(88,166,255,.15);--or:#d29922;--odm:rgba(210,153,34,.15);--rd:#f85149;--rdm:rgba(248,81,73,.15);--pp:#bc8cff;--pdm:rgba(188,140,255,.15);--yw:#e3b341;--fn:'Noto Sans JP',sans-serif;--mo:'DM Mono',monospace}
@@ -171,7 +170,7 @@ mark{background:rgba(63,185,80,.3);color:var(--tx);border-radius:3px;padding:0 2
 @media(max-width:1024px){.d2c{grid-template-columns:1fr!important}}
 @media(max-width:767px){
   .sb{transform:translateX(-100%)}.sb.on{transform:translateX(0)}
-  .hbg{display:flex}.bnav{display:block}.main{margin-left:0;padding-bottom:70px}
+  .hbg{display:flex}.bnav{display:block}.main{margin-left:0;padding-bottom:calc(70px + env(safe-area-inset-bottom,0px))}
   .topbar{padding:0 13px;height:50px}.tbst{display:none}
   .page{padding:13px 13px 18px}
   .ph{flex-direction:column;align-items:flex-start}
